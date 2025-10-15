@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="icon" href="/images/Portfolio1.png" />
+    <link rel="stylesheet" href="output.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>My Portfolio</title>
+  </head>
+  <body
+    class="bg-[#121212] text-[#EEEEEE] font-sans m-0 flex flex-col overflow-x-hidden"
+  >
+    <header class="mb-[50px] relative">
+      <div
+        class="flex justify-between w-full p-5 items-center flex-wrap md:flex-nowrap"
+      >
+        <div class="flex items-center justify-between w-full md:w-auto">
+          <h2
+            class="text-[35px] sm:text-[28px] text-[#696969] font-extrabold cursor-pointer inline-block"
+          >
+            <a href="#" title="www.Wareesha.com">Wareesha</a>
+          </h2>
+
+          <button
+            id="menu-btn"
+            class="text-white text-3xl md:hidden focus:outline-none"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+        <div
+          id="menu"
+          class="hidden w-full md:flex md:w-auto mt-4 md:mt-0 md:ml-auto"
+        >
+          <ul
+            class="flex flex-col md:flex-row md:gap-10 gap-4 text-center md:text-left"
+          >
+            <li
+              class="relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-200 hover:after:w-full hover:font-bold hover:text-gray-400"
+            >
+              <a href="#home">Home</a>
+            </li>
+            <li
+              class="relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-200 hover:after:w-full hover:font-bold hover:text-gray-400"
+            >
+              <a href="#about">About</a>
+            </li>
+            <li
+              class="relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-200 hover:after:w-full hover:font-bold hover:text-gray-400"
+            >
+              <a href="#skills">Skills</a>
+            </li>
+            <li
+              class="relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-200 hover:after:w-full hover:font-bold hover:text-gray-400"
+            >
+              <a href="#projects">Projects</a>
+            </li>
+            <li
+              class="relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-200 hover:after:w-full hover:font-bold hover:text-gray-400"
+            >
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="mx-5 md:mx-[40px]">
+      <section
+        id="home"
+        class="flex flex-col md:flex-row justify-between items-center mb-[100px]"
+      >
+        <div
+          class="pl-0 md:pl-[70px] pr-0 md:pr-[60px] text-center md:text-left"
+        >
+          <h1 class="text-[40px] sm:text-[30px] font-extrabold mt-[60px]">
+            Hi, I'm
+            <span
+              class="bg-gradient-to-r from-blue-500 to-gray-400 bg-clip-text text-transparent"
+              >Wareesha</span
+            >
+          </h1>
+          <h2 class="text-[20px] font-bold text-[#d1d0d0] mt-2">
+            <span id="typed-text"></span>
+          </h2>
+          <p
+            class="mt-[15px] text-[18px] text-[#EEEEEE] leading-relaxed px-2 md:px-0"
+          >
+            I create modern, responsive websites with a focus on clean design
+            and smooth user experience.
+          </p>
+          <div>
+            <button
+              id="download-CV"
+              type="button"
+              class="bg-blue-500 w-[150px] mt-[30px] p-[5px] h-[40px] hover:bg-blue-700 text-black font-bold rounded-md flex items-center justify-center gap-2 mx-auto md:mx-0"
+            >
+              <i class="fa-solid fa-download"></i> CV
+            </button>
+          </div>
+        </div>
+
+        <div class="mt-8 md:mt-0">
+          <img
+            class="rounded-full w-[250px] sm:w-[300px] md:w-[400px] h-[250px] sm:h-[300px] md:h-[400px] object-cover drop-shadow-[0_0_20px_#d6cfcf] shadow-[0_0_35px_#0d69f3]"
+            src="/images/MyImg.png"
+            alt="My image"
+          />
+        </div>
+      </section>
+
+      <section
+        id="about"
+        class="flex justify-center flex-col items-center mb-[100px] px-4 text-center"
+      >
+        <h3 class="text-4xl md:text-5xl font-extrabold text-white mb-10">
+          About
+        </h3>
+
+        <p class="text-[#EEEEEE] text-base leading-relaxed mb-10 max-w-3xl">
+          I am Wareesha Rehman, a Computer Science student passionate about
+          building modern, responsive, and user-friendly websites.
+        </p>
+
+        <div
+          class="flex flex-col md:flex-row justify-center gap-10 md:gap-[100px]"
+        >
+          <div
+            class="bg-gray-800 p-6 rounded-lg shadow-[0px_4px_10px_rgba(173,216,230,0.7)] w-full md:w-[350px]"
+          >
+            <h3
+              class="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-gray-400 bg-clip-text text-transparent"
+            >
+              Education
+            </h3>
+            <ul class="text-gray-300 text-sm leading-relaxed">
+              <li>B.Sc. in Computer Science – UCP (2024-Present)</li>
+              <li>Intermediate in CS – PGC (2022-2024)</li>
+              <li>Matriculation in Science – Little Angels (2020-2022)</li>
+            </ul>
+          </div>
+
+          <div
+            class="bg-gray-800 p-6 rounded-lg shadow-[0px_4px_10px_rgba(173,216,230,0.7)] w-full md:w-[350px]"
+          >
+            <h3
+              class="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-gray-400 bg-clip-text text-transparent"
+            >
+              Personal Details
+            </h3>
+            <ul class="text-gray-300 text-sm leading-relaxed">
+              <li>Lahore, Pakistan</li>
+              <li>wareeshamalik034@gmail.com</li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/wareesha-rehman-7a0a972a4"
+                  class="hover:underline"
+                  target="_blank"
+                  >LinkedIn Profile</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <button
+        id="backToTop"
+        class="fixed bottom-5 right-5 bg-blue-500 hover:bg-blue-700 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg transition-all duration-300"
+      >
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+
+      <section id="skills" class="flex justify-center flex-col items-center">
+        <h3 class="text-5xl font-extrabold tracking-wider1 text-white mb-10">
+          Skills
+        </h3>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[40px]">
+          <div
+            class="bg-gray-800 shadow-[0px_4px_10px_rgba(173,216,230,0.7)] hover:scale-[1.02] w-[150px] h-[200px] transition-all duration-300 ease-in-out p-6 rounded-lg"
+          >
+            <div class="flex items-center gap-3 mb-4">
+              <i class="fab fa-html5 text-orange-500 text-2xl pb-[30px]"></i>
+              <span class="text-white font-semibold text-lg pb-[30px]"
+                >HTML</span
+              >
+            </div>
+            <div class="w-full bg-gray-600 h-3 rounded-full overflow-hidden">
+              <div
+                class="bg-blue-500 h-3 rounded-full w-[0px] hover:w-[90%] hover:transition-all duration-1000"
+                data-width="90%"
+              ></div>
+            </div>
+            <span class="text-gray-300 text-sm mt-1 block">90%</span>
+          </div>
+
+          <div
+            class="bg-gray-800 p-6 rounded-lg shadow-[0px_4px_10px_rgba(173,216,230,0.7)] hover:scale-[1.02] transition-all duration-300 ease-in-out"
+          >
+            <div class="flex items-center gap-3 mb-4">
+              <i class="fab fa-css3-alt text-blue-500 text-2xl pb-[30px]"></i>
+              <span class="text-white font-semibold text-lg pb-[30px]"
+                >CSS</span
+              >
+            </div>
+            <div class="w-full bg-gray-600 h-3 rounded-full">
+              <div
+                class="bg-blue-500 h-3 rounded-full w-[0px] hover:w-[85%] hover:transition-all duration-1000"
+                data-width="85%"
+              ></div>
+            </div>
+            <span class="text-gray-300 text-sm mt-1 block">85%</span>
+          </div>
+
+          <div
+            class="bg-gray-800 p-6 rounded-lg shadow-[0px_4px_10px_rgba(173,216,230,0.7)] hover:scale-[1.02] transition-all duration-300 ease-in-out"
+          >
+            <div class="flex items-center gap-3 mb-4">
+              <i
+                class="fab fa-js-square text-yellow-400 text-2xl pb-[30px]"
+              ></i>
+              <span class="text-white font-semibold text-lg pb-[30px]"
+                >JavaScript</span
+              >
+            </div>
+            <div class="w-full bg-gray-600 h-3 rounded-full">
+              <div
+                class="bg-blue-500 h-3 rounded-full w-[0] hover:w-[70%] hover:transition-all duration-1000"
+                data-width="70%"
+              ></div>
+            </div>
+            <span class="text-gray-300 text-sm mt-1 block">70%</span>
+          </div>
+
+          <div
+            class="bg-gray-800 p-6 rounded-lg shadow-[0px_4px_10px_rgba(173,216,230,0.7)] hover:scale-[1.02] transition-all duration-300 ease-in-out w-[150px] h-[200px]"
+          >
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-white font-semibold text-lg pb-[30px]"
+                >TailwindCSS</span
+              >
+            </div>
+            <div class="w-full bg-gray-600 h-3 rounded-full">
+              <div
+                class="bg-blue-500 h-3 rounded-full w-[0] hover:w-[70%] hover:transition-all duration-1000"
+                data-width="70%"
+              ></div>
+            </div>
+            <span class="text-gray-300 text-sm mt-1 block">70%</span>
+          </div>
+
+          <div
+            class="bg-gray-800 p-6 rounded-lg shadow-[0px_4px_10px_rgba(173,216,230,0.7)] hover:scale-[1.02] transition-all duration-300 ease-in-out"
+          >
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-white font-semibold text-lg pb-[30px]"
+                >C++</span
+              >
+            </div>
+            <div class="w-full bg-gray-600 h-3 rounded-full">
+              <div
+                class="bg-blue-500 h-3 rounded-full w-[0] hover:w-[70%] hover:transition-all duration-1000"
+                data-width="65%"
+              ></div>
+            </div>
+            <span class="text-gray-300 text-sm mt-1 block">65%</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="flex flex-col mt-[100px]">
+        <h3
+          class="flex justify-center text-5xl font-extrabold tracking-wider1 text-white mb-10"
+        >
+          Projects
+        </h3>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center md:grid-cols-2"
+        >
+          <div
+            class="bg-gray-600 rounded-md w-[350px] h-[500px] flex flex-col shadow-[0px_4px_10px_rgba(173,216,230,0.5)] hover:scale-[1.02] transition-all duration-300 ease-in-out"
+          >
+            <div class="h-[200px] w-full overflow-hidden">
+              <img
+                src="/images/Weather.jpg"
+                alt="Weather App"
+                class="w-full h-full object-cover rounded-t-md"
+              />
+            </div>
+            <span
+              class="block text-center font-bold text-[30px] bg-gradient-to-r from-blue-500 to-gray-400 bg-clip-text text-transparent mt-4 mb-3"
+              >Weather App</span
+            >
+            <span
+              class="m-[10px] text-[15px] text-gray-200 leading-relaxed flex-grow"
+            >
+              Weather-Checker is a responsive web app that lets users check the
+              current temperature and weather conditions for any city through a
+              clean, mobile-friendly interface.
+            </span>
+            <div class="flex justify-center mt-auto mb-4">
+              <button
+                type="button"
+                id="weather-project"
+                class="bg-blue-500 w-[150px] p-[5px] h-[40px] hover:bg-blue-700 text-black font-bold rounded-md transition-all duration-300 ease-in-out"
+              >
+                View Project
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-600 rounded-md w-[350px] h-[500px] flex flex-col shadow-[0px_4px_10px_rgba(173,216,230,0.5)] hover:scale-[1.02] transition-all duration-300 ease-in-out"
+          >
+            <div class="h-[200px] w-full overflow-hidden">
+              <img
+                src="/images/todo.png"
+                alt="To-Do App"
+                class="w-full h-full object-cover rounded-t-md"
+              />
+            </div>
+            <span
+              class="block text-center font-bold text-[30px] bg-gradient-to-r from-blue-500 to-gray-400 bg-clip-text text-transparent mt-4 mb-3"
+              >To-Do App</span
+            >
+            <span
+              class="m-[10px] text-[15px] text-gray-200 leading-relaxed flex-grow"
+            >
+              Daily Planner JS is a minimalist to-do list app that allows users
+              to add, edit, and delete tasks. It’s designed with a clean,
+              responsive interface for a smooth experience across all devices.
+            </span>
+            <div class="flex justify-center mt-auto mb-4">
+              <button
+                type="button"
+                id="todo-project"
+                class="bg-blue-500 w-[150px] p-[5px] h-[40px] hover:bg-blue-700 text-black font-bold rounded-md transition-all duration-300 ease-in-out"
+              >
+                View Project
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-600 rounded-md w-[350px] h-[500px] flex flex-col shadow-[0px_4px_10px_rgba(173,216,230,0.5)] hover:scale-[1.02] transition-all duration-300 ease-in-out"
+          >
+            <div class="h-[200px] w-full overflow-hidden">
+              <img
+                src="https://simicart.com/wp-content/uploads/eCommerce-logo.jpg"
+                alt="E-Commerce App"
+                class="w-full h-full object-cover rounded-t-md"
+              />
+            </div>
+            <span
+              class="block text-center font-bold text-[30px] bg-gradient-to-r from-blue-500 to-gray-400 bg-clip-text text-transparent mt-4 mb-3"
+              >E-Commerce App</span
+            >
+            <span
+              class="m-[10px] text-[15px] text-gray-200 leading-relaxed flex-grow"
+            >
+              An eCommerce web app that allows users to browse, add, and
+              purchase products seamlessly.
+            </span>
+            <div class="flex justify-center mt-auto mb-4">
+              <button
+                type="button"
+                id="ecommerce-project"
+                class="bg-blue-500 w-[150px] p-[5px] h-[40px] hover:bg-blue-700 text-black font-bold rounded-md transition-all duration-300 ease-in-out"
+              >
+                View Project
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-600 rounded-md w-[350px] h-[500px] flex flex-col shadow-[0px_4px_10px_rgba(173,216,230,0.5)] hover:scale-[1.02] transition-all duration-300 ease-in-out"
+          >
+            <div class="h-[200px] w-full overflow-hidden">
+              <img
+                src="/images/Attendence.png"
+                alt="Attendence Recorder "
+                class="w-full h-full object-cover rounded-t-md"
+              />
+            </div>
+            <span
+              class="block text-center font-bold text-[30px] bg-gradient-to-r from-blue-500 to-gray-400 bg-clip-text text-transparent mt-4 mb-3"
+              >Attendance Recorder
+            </span>
+            <span
+              class="m-[10px] text-[15px] text-gray-200 leading-relaxed flex-grow"
+            >
+              Attendance Recorder is a console-based C++ project that allows
+              users to record, view, and manage student attendance efficiently.
+              It features a simple text-based interface with file handling for
+              storing and retrieving attendance data.
+            </span>
+            <div class="flex justify-center mt-auto mb-4">
+              <button
+                type="button"
+                id="attendance-project"
+                class="bg-blue-500 w-[150px] p-[5px] h-[40px] hover:bg-blue-700 text-black font-bold rounded-md transition-all duration-300 ease-in-out"
+              >
+                View Project
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-600 rounded-md w-[350px] h-[500px] flex flex-col shadow-[0px_4px_10px_rgba(173,216,230,0.5)] hover:scale-[1.02] transition-all duration-300 ease-in-out"
+          >
+            <div class="h-[200px] w-full overflow-hidden">
+              <img
+                src="/images/image.png"
+                alt="Grocery Shop Mannagement"
+                class="w-full h-full object-cover rounded-t-md"
+              />
+            </div>
+            <span
+              class="block text-center font-bold text-[30px] bg-gradient-to-r from-blue-500 to-gray-400 bg-clip-text text-transparent mt-4 mb-3"
+              >Grocery Shop Mannagement
+            </span>
+            <span
+              class="m-[10px] text-[15px] text-gray-200 leading-relaxed flex-grow"
+            >
+              A C++ console project for managing grocery inventory, billing, and
+              customer transactions.
+            </span>
+            <div class="flex justify-center mt-auto mb-4">
+              <button
+                id="grocery-project"
+                type="button"
+                id="attendance-project"
+                class="bg-blue-500 w-[150px] p-[5px] h-[40px] hover:bg-blue-700 text-black font-bold rounded-md transition-all duration-300 ease-in-out"
+              >
+                View Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        class="flex flex-col items-center justify-center mt-[100px] mb-[100px]"
+      >
+        <h3 class="text-5xl font-extrabold text-white mb-10">Contact Me</h3>
+
+        <div
+          class="flex flex-col md:flex-row justify-center items-center gap-16 w-full max-w-6xl"
+        >
+          <div
+            class="flex md:flex-col flex-row md:justify-between justify-between items-center gap-8 bg-gray-800 p-6 rounded-2xl shadow-[0_0_20px_rgba(173,216,230,0.4)] w-[80%] md:w-[120px] md:h-[420px] hover:shadow-[0_0_30px_rgba(173,216,230,0.7)] transition-all duration-300"
+          >
+            <div
+              class="flex md:flex-col flex-row items-center justify-center gap-6"
+            >
+              <a
+                href="https://www.linkedin.com/in/wareesha-rehman-7a0a972a4"
+                target="_blank"
+                class="text-gray-400 hover:text-blue-500 text-3xl transition-all duration-300"
+                title="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+
+              <a
+                href="mailto:wareeshamalik034@gmail.com"
+                class="text-gray-400 hover:text-red-400 text-3xl transition-all duration-300"
+                title="Email"
+              >
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+
+              <a
+                href="https://github.com/Wareesha381"
+                target="_blank"
+                class="text-gray-400 hover:text-gray-200 text-3xl transition-all duration-300"
+                title="GitHub"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+
+              <a
+                href="https://www.instagram.com/wareesha.creative?igsh=MWgxNjZvZjhpemRlMw=="
+                target="_blank"
+                class="text-gray-400 hover:text-pink-500 text-3xl transition-all duration-300"
+                title="Instagram"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+
+            <div class="flex flex-col items-center mt-4 text-center">
+              <a
+                href="https://www.google.com/maps/place/Lahore,+Pakistan"
+                target="_blank"
+                class="flex flex-col items-center text-blue-400 hover:text-blue-500 transition-all duration-300"
+                title="View on Google Maps"
+              >
+                <i class="fa-solid fa-location-dot text-xl mb-1"></i>
+                <span class="text-gray-300 text-sm hover:text-white"
+                  >Lahore, Pakistan</span
+                >
+              </a>
+            </div>
+          </div>
+
+          <form
+            action="https://formspree.io/f/xwprrzjv"
+            method="POST"
+            class="bg-gray-800 p-8 rounded-2xl shadow-[0_0_25px_rgba(173,216,230,0.6)] w-[400px] flex flex-col gap-5 transform hover:scale-[1.02] transition-transform duration-300 ease-in-out"
+          >
+            <div class="relative group">
+              <i
+                class="fa-solid fa-user absolute left-3 top-3 text-gray-400 group-focus-within:text-blue-400"
+              ></i>
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                id="name-sp"
+                required
+                class="pl-10 p-3 w-full rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
+              />
+            </div>
+
+            <div class="relative group">
+              <i
+                class="fa-solid fa-envelope absolute left-3 top-3 text-gray-400 group-focus-within:text-blue-400"
+              ></i>
+              <input
+                type="email"
+                name="email"
+                id="email-sp"
+                placeholder="Your Email"
+                required
+                class="pl-10 p-3 w-full rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
+              />
+            </div>
+
+            <div class="relative group">
+              <i
+                class="fa-solid fa-comment absolute left-3 top-3 text-gray-400 group-focus-within:text-blue-400"
+              ></i>
+              <textarea
+                name="message"
+                rows="5"
+                id="message-ap"
+                placeholder="Your Message"
+                required
+                class="pl-10 p-3 w-full rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 resize-none"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="bg-blue-500 hover:bg-blue-600 active:scale-95 text-white font-bold py-3 px-4 rounded-md transition-all duration-300 ease-in-out shadow-[0_0_15px_rgba(59,130,246,0.4)] hover:shadow-[0_0_25px_rgba(59,130,246,0.7)]"
+              id="send-sp"
+            >
+              <i class="fa-solid fa-paper-plane mr-2"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <footer
+        class="bg-gray-900 text-gray-400 py-6 flex flex-col items-center justify-center mt-[80px]"
+      >
+        <div class="text-sm text-gray-500">
+          © 2025 Wareesha Rehman. All rights reserved.
+        </div>
+        <div
+          class="flex lg:flex-row md:flex-row flex-row items-center justify-center gap-6"
+        >
+          <a
+            href="https://www.linkedin.com/in/wareesha-rehman-7a0a972a4"
+            target="_blank"
+            class="text-gray-400 hover:text-blue-500 text-3xl transition-all duration-300"
+            title="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/Wareesha381"
+            target="_blank"
+            class="text-gray-400 hover:text-gray-200 text-3xl transition-all duration-300"
+            title="GitHub"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a
+            href="https://www.instagram.com/wareesha.creative?igsh=MWgxNjZvZjhpemRlMw=="
+            target="_blank"
+            class="text-gray-400 hover:text-pink-500 text-3xl transition-all duration-300"
+            title="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://unpkg.com/ityped@0.0.10"></script>
+    <script src="/scripts/script.js"></script>
+    <script></script>
+  </body>
+</html>

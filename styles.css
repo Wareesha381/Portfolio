@@ -1,0 +1,22 @@
+.fa-jelly-fill {
+  background: linear-gradient(135deg, #0d69f3, #d6cfcf); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+   
+
+@keyframes jelly {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1, 0.9);
+  }
+  50% {
+    transform: scale(0.9, 1.1);
+  }
+  75% {
+    transform: scale(1.05, 0.95);
+  }
+}
+
