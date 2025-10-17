@@ -1,0 +1,62 @@
+.fa-jelly-fill {
+  background: linear-gradient(135deg, #0d69f3, #d6cfcf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @keyframes jelly {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.1, 0.9);
+    }
+    50% {
+      transform: scale(0.9, 1.1);
+    }
+    75% {
+      transform: scale(1.05, 0.95);
+    }
+  }
+}
+@keyframes pulse-slow {
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+.animate-pulse-slow {
+  animation: pulse-slow 6s ease-in-out infinite;
+}
+@keyframes scroll-x {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-x {
+  display: flex;
+  width: max-content;
+  animation: scroll-x 18s linear infinite; /* Faster scroll */
+}
+
+.certificate-card {
+  background: rgba(31, 41, 55, 0.8);
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+  padding: 1rem;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.certificate-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.6);
+}
